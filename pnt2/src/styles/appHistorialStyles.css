@@ -1,0 +1,74 @@
+.container1 {
+  background-image: url("~@/assets/platos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 170vh;
+  /* height: 160%; */
+  /* width: 100vw; */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 240px);
+}
+
+.h2 {
+  color: black;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.inicio-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.usuario{
+  margin-top: 0.1rem;
+}
+.platos {
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  margin: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.formulario {
+  background-color: rgb(199, 221, 233);
+  background-image: linear-gradient(to left, rgb(131, 137, 146) 0%, rgb(201, 203, 207) 100%);
+  box-shadow: 1px 5px 15px 0px black;
+  width: min(80rem, 50%);
+  margin:  auto;
+  padding: 1rem;
+  margin-top: 0.1rem;
+  border-radius: 1rem;
+}
+
+.contenedor-campos {
+  /* display: grid; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 10rem;
+  column-gap: 1rem;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: black
+}
+
+.gastoTotal {
+  font-size: 1.2em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
