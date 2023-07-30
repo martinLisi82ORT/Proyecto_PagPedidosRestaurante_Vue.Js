@@ -50,6 +50,7 @@ Figma
 https://www.figma.com/file/dAbX9JxRnnP4kLCI1lVFPH/TP_PNT2?type=design&node-id=0%3A1&mode=design&t=oGXkmNEcvX6eL5QE-1
 
 ### Ejemplo componente inicio
+![Sin título](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/d5143b72-40b8-4c76-b448-77787d02755a)
 
 ### Ejemplo Menú y Pedidos
 ![image](https://github.com/SimonF4/PNT2-20231C-GRUPO5-ProyectoFinal/assets/111466956/a0e4179c-bdfc-4282-b091-3c5bf9ed3152)
