@@ -1,70 +1,75 @@
 <template>
-  <div class="menu-container">
-    <nav class="navbar navbar-fixed">
-      <div class="navbar-sections-left navbar-sections-line">
-        <div class="navbar-center">
-          <select v-model="seleccionarSeccion" class="nav-select">
-            <option value="" disabled>Seleccionar sección</option>
-            <option v-for="section in menu" :value="section.category" :key="section.category">{{ section.category }}</option>
-          </select>
-          <button @click="navegarASeccion">Ir</button>
+  <div class="background-imagen">
+
+    <div class="menu-container">
+      <nav class="navbar navbar-fixed">
+        <div class="navbar-sections-left navbar-sections-line">
+          <div class="navbar-center">
+            <select v-model="seleccionarSeccion" class="nav-select">
+              <option value="" disabled>Seleccionar sección</option>
+              <option v-for="section in menu" :value="section.category" :key="section.category">{{ section.category }}
+              </option>
+            </select>
+            <button @click="navegarASeccion">Ir</button>
+          </div>
         </div>
-      </div>
-      <div class="navbar-sections-center navbar-sections-line">
-        <h1 class="navbar-title navbar-title-center">Resto Vue Pedidos</h1>
-      </div>
-      <div class="navbar-sections-right navbar-sections-line">
-        <button class="navbar-volver" @click="irAInicio()">Volver</button>
-        <div class="navbar-cart" @click="mostrarModal = true">
-          <p class="cart-count" :class="{ 'cart-count-highlight': carrito.length > 0 }">{{ carrito.length }}</p>
-          <i class="fas fa-shopping-cart" :class="{ 'cart-highlight': carrito.length > 0 }"></i>
+        <div class="navbar-sections-center navbar-sections-line">
+          <h1 class="navbar-title navbar-title-center">Resto Vue Pedidos</h1>
         </div>
-      </div>
-    </nav>
-    <div v-if="mostrarModal" class="modal" @click.self="mostrarModal = false">
-    <div class="modal-content">
-      <span class="modal-close" @click="mostrarModal = false">&times;</span>
-      <h2>Carrito</h2>
-      <div v-if="carrito.length === 0">
-        <p>No hay elementos en el carrito.</p>
-      </div>
-      <div v-else>
-        <div v-for="item in carrito" :key="item.id">
-          <p>{{ item.nombre }}</p>
-          <p>Precio: {{ item.precio }}</p>
+        <div class="navbar-sections-right navbar-sections-line">
+          <button class="navbar-volver" @click="irAInicio()">Volver</button>
+          <div class="navbar-cart" @click="mostrarModal = true">
+            <p class="cart-count" :class="{ 'cart-count-highlight': carrito.length > 0 }">{{ carrito.length }}</p>
+            <i class="fas fa-shopping-cart" :class="{ 'cart-highlight': carrito.length > 0 }"></i>
+          </div>
         </div>
-        <p>Total: {{ calcularTotal() }}</p>
-        <button @click="realizarPedido()">Realizar pedido</button>
-        <button @click="cancelarPedido(); mostrarModal = false">Cancelar Pedido</button>
-      </div>
-    </div>
-  </div>
-    <div>
-      <h1 class="menu-title">Menú</h1>
-      <div class="menu-section" v-for="section in menu" :key="section.category" :class="{ desplegado: mostrarMenu }" :ref="section.category">
-        <h2 class="menu-section-title">{{ section.category }}</h2>
-        <div class="menu-item" v-for="plato in section.platos" :key="plato.id">
-          <div class="menu-item-box">
-            <div class="menu-item-image">
-              <img :src="plato.imagen" alt="Imagen del plato" />
+      </nav>
+      <div v-if="mostrarModal" class="modal" @click.self="mostrarModal = false">
+        <div class="modal-content">
+          <span class="modal-close" @click="mostrarModal = false">&times;</span>
+          <h2>Carrito</h2>
+          <div v-if="carrito.length === 0">
+            <p>No hay elementos en el carrito.</p>
+          </div>
+          <div v-else>
+            <div v-for="item in carrito" :key="item.id">
+              <p>{{ item.nombre }}</p>
+              <p>Precio: {{ item.precio }}</p>
             </div>
-            <div class="menu-item-details">
-              <h3 class="menu-item-name">{{ plato.nombre }}</h3>
-              <div class="menu-item-description">
-                <p>{{ plato.descripcion }}</p>
+            <p>Total: {{ calcularTotal() }}</p>
+            <button @click="realizarPedido()">Realizar pedido</button>
+            <button @click="cancelarPedido(); mostrarModal = false">Cancelar Pedido</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="menu-title">Menú</h1>
+        <div class="menu-section" v-for="section in menu" :key="section.category" :class="{ desplegado: mostrarMenu }"
+          :ref="section.category">
+          <h2 class="menu-section-title">{{ section.category }}</h2>
+          <div class="menu-item" v-for="plato in section.platos" :key="plato.id">
+            <div class="menu-item-box">
+              <div class="menu-item-image">
+                <img :src="plato.imagen" alt="Imagen del plato" />
               </div>
-              <p class="menu-item-price">Precio: {{ plato.precio }}</p>
-              <button class="menu-item-add" @click="agregarAlCarrito(plato)">Agregar al carrito</button>
+              <div class="menu-item-details">
+                <h3 class="menu-item-name">{{ plato.nombre }}</h3>
+                <div class="menu-item-description">
+                  <p>{{ plato.descripcion }}</p>
+                </div>
+                <p class="menu-item-price">Precio: {{ plato.precio }}</p>
+                <button class="menu-item-add" @click="agregarAlCarrito(plato)">Agregar al carrito</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer>
+    <footer>
       <p>Dirección: Av. Falsa 1234</p>
       <p>Teléfono: 555-555</p>
-  </footer>
+    </footer>
+  </div>
 </template>
 
 <style src="../styles/listaPlatosStyles.css" scoped></style>
@@ -96,7 +101,7 @@ import rogel from '@/assets/rogel.webp';
 import vigilante from '@/assets/vigilanete.jpg';
 import conitos from '@/assets/conitos.jpg';
 import budindepan from '@/assets/budindepan.jpeg';
-import useAuthStore  from '../stores/AuthStore'
+import useAuthStore from '../stores/AuthStore'
 //agregar funcionalidad de stock. (validar el maximo que pueda seguir segun el stock).
 //agregar funcionalidad de historial (tablero de informacion.) (platos mas vendidos en el mes).
 //No darle tanta bola al tema del pago , sino que sea algo funcional y que tira.
@@ -331,22 +336,22 @@ export default {
       this.carrito.push(plato);
     },
     realizarPedido() {
-    if (useAuthStore().hayUsuarioAutenticado) {
-      useAuthStore().guardarListaPlatos(this.carrito);
-      this.$router.push('/pagar');
+      if (useAuthStore().hayUsuarioAutenticado) {
+        useAuthStore().guardarListaPlatos(this.carrito);
+        this.$router.push('/pagar');
 
-    this.mostrarModal = false;
-  } else {
-    console.log('Error: El usuario no está autenticado');
-    // Redirigir a la página de inicio de sesión
-    this.$router.push('/login');
-  }
-},
+        this.mostrarModal = false;
+      } else {
+        console.log('Error: El usuario no está autenticado');
+        // Redirigir a la página de inicio de sesión
+        this.$router.push('/login');
+      }
+    },
 
     calcularTotal() {
       return this.carrito.reduce((total, plato) => total + plato.precio, 0);
     },
-    
+
     navegarASeccion() {
       if (this.seleccionarSeccion) {
         const seccionSeleccionada = this.$refs[this.seleccionarSeccion][0];
@@ -362,7 +367,7 @@ export default {
       this.cancelarPedido();
     },
 
-    cancelarPedido(){
+    cancelarPedido() {
       //Vacia la lista del componente.
       this.carrito.length = 0;
     }

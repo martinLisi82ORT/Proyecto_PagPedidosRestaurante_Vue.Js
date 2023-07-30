@@ -1,5 +1,10 @@
 <template>
   <div class="background-image">
+
+    <header class="header">
+      <button class="button-inicio" @click="inicio">Inicio</button>
+    </header>
+
     <div class="registro-container">
       <h1 class="register-title">Registrarse</h1>
       <input type="text" v-model="email" placeholder="Email">
@@ -40,6 +45,10 @@ export default {
     const showAlert = ref(false);
     const usuarioCreado = ref(false);
     const alertMessage = ref('');
+
+    const inicio = () => {
+      router.push("/");
+    };
 
     const registrarse = async () => {
       if (!validarDatos()) return;
@@ -94,7 +103,8 @@ export default {
       showAlert,
       usuarioCreado,
       alertMessage,
-      registrarse
+      registrarse,
+      inicio
     };
   }
 }
@@ -176,5 +186,15 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+
+.header {
+  background-color: transparent;
+
+}
+
+.button-inicio {
+  background-color: transparent;
+  text-align: right;
 }
 </style>

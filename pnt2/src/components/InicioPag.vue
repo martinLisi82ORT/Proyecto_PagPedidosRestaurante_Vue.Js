@@ -2,8 +2,6 @@
   <div class="container">
     <header>
       <button v-if="mostrarHistorial()" class="menu-button" @click="irAHistorial">Historial</button>
-
-
       <button v-if="mostrarEstadisticas()" class="ingresar-button" @click="irAEstadisticas">Estadisticas</button>
       <button class="menu-button" @click="irAPlatos">Menu</button>
       <!-- En App.vue la llame /login => tengo q usar esa direccion. --- <RouterLink to="/AppLogin">Abrir login</RouterLink> -->

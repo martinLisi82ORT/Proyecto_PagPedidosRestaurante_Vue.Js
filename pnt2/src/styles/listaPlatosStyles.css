@@ -1,3 +1,10 @@
+.background-imagen{
+  background-image: url('~@/assets/login.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
 .menu-item-box {
   border: 1px solid black;
   padding: 10px;

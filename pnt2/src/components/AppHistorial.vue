@@ -1,14 +1,16 @@
 <template>
-  <nav class="navbar">
+  <!-- <nav class="navbar">
     <div class="navbar-sections-center">
       <h1 class="navbar-title navbar-title-center">Resto Vue Pedidos</h1>
     </div>
     <div>
       <button class="inicio-button" @click="volver">Inicio</button>
     </div>
-  </nav>
+  </nav> -->
   <div class="container1">
-    <header></header>
+    <header>
+      <button class="inicio-button" @click="volver">Volver</button>
+    </header>
     <main class="main">
       <div class="formulario">
         <h2 class="h2">Historial de compras</h2>

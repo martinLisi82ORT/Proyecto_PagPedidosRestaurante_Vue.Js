@@ -1,19 +1,39 @@
 <template>
-    <div class="background-image">
-  <div class="login-container">
-    <h1 class="login-title">Iniciar sesión</h1>
-    <div class="form-group">
-      <input type="text" v-model="usuario" placeholder="Correo electrónico" class="input-field">
+  <!-- <nav class="header">
+    <div class="navbar">
+      <h1 class=" navbar-title-center">Resto Vue Pedidos</h1>
     </div>
-    <div class="form-group">
-      <input type="password" v-model="password" placeholder="Contraseña" class="input-field">
+    <div>
+
+      <button class="volver-button" @click="volver">Volver</button>
     </div>
-    <button @click="entrar" class="login-button">Entrar</button>
-    <button @click="irARegistro" class="register-button">Registrarse</button>
-    <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
+  </nav> -->
+
+  <div class="background-image">
+
+    <header class="header">
+      <button class="button-inicio" @click="volver">Volver</button>
+    </header>
+
+
+    <div class="login-container">
+      <h1 class="login-title">Iniciar sesión</h1>
+      <div class="form-group">
+        <input type="text" v-model="usuario" placeholder="Correo electrónico" class="input-field">
+      </div>
+      <div class="form-group">
+        <input type="password" v-model="password" placeholder="Contraseña" class="input-field">
+      </div>
+      <button @click="entrar" class="login-button">Entrar</button>
+      <button @click="irARegistro" class="register-button">Registrarse</button>
+      <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
+    </div>
   </div>
-</div>
 </template>
+
+<!-- <style src="../styles/appHistorialStyles.css" scoped></style>
+<style src="../styles/inicioStyles.css" scoped></style>
+<style src="../styles/listaPlatosStyles.css" scoped></style> -->
 
 <script>
 import { ref } from 'vue';
@@ -39,6 +59,10 @@ export default {
       }
     };
 
+    const volver = () => {
+      router.push("/");
+    };
+
     const irARegistro = () => {
       router.push('/registrarse');
     };
@@ -48,7 +72,8 @@ export default {
       password,
       errorMessage,
       entrar,
-      irARegistro
+      irARegistro,
+      volver
     };
   }
 }
@@ -73,12 +98,35 @@ export default {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.navbar {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.header {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 15px;
+  background-color: transparent;
+  padding: 2px;
+  cursor: pointer;
+  text-align: right;
+}
 
+/* .navbar-title-center {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+} */
 .login-title {
   margin-bottom: 20px;
   font-size: 24px;
@@ -128,4 +176,13 @@ export default {
   color: red;
   font-size: 16px;
 }
-</style>
+
+.button-inicio {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: right;
+}</style>
