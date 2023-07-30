@@ -40,20 +40,12 @@ Componente: AppHistorial.vue
   - para mostrar un historial de los pedidos que hizo.
   - Mostrar-> plato: con precio y FECHA del pedido.
 
-# Bocetos
-Realizamos un boceto muy general con Figma para conocer en forma aproximada como quedaria nuestra app.
-
-## Herramienta usada:
-Figma
-
-## Link al archivo boceto:
-https://www.figma.com/file/dAbX9JxRnnP4kLCI1lVFPH/TP_PNT2?type=design&node-id=0%3A1&mode=design&t=oGXkmNEcvX6eL5QE-1
 
 ### Ejemplo componente inicio
-![image](https://github.com/SimonF4/PNT2-20231C-GRUPO5-ProyectoFinal/assets/111466956/4728297b-e833-4316-ac3c-505b787934b2)
+![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/9cffddb8-fb53-4099-a467-e1d7bd9fd243)
 
 ### Ejemplo Menú y Pedidos
 ![image](https://github.com/SimonF4/PNT2-20231C-GRUPO5-ProyectoFinal/assets/111466956/a0e4179c-bdfc-4282-b091-3c5bf9ed3152)
 
 ### Ejemplo Login
-![image](https://github.com/SimonF4/PNT2-20231C-GRUPO5-ProyectoFinal/assets/111466956/a841e028-1c48-4545-ab5f-1331f1a994e6)
+![Login](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/b286c9c5-63fc-4080-8b12-566da6d9893f)
