@@ -1,9 +1,11 @@
 .background-imagen{
-  background-image: url('~@/assets/login.jpg');
+  background-image: url('~@/assets/pizza.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-}
+  /* max-width: 200px;
+  margin-right: 20px; */
+ }
 
 .menu-item-box {
   border: 1px solid black;
@@ -238,7 +240,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #cbfad1;
   padding: 20px;
   border-radius: 4px;
   max-height: 400px; /* Establece la altura máxima del contenido */

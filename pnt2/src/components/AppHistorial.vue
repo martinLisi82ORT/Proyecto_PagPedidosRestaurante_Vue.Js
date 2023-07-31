@@ -1,12 +1,4 @@
 <template>
-  <!-- <nav class="navbar">
-    <div class="navbar-sections-center">
-      <h1 class="navbar-title navbar-title-center">Resto Vue Pedidos</h1>
-    </div>
-    <div>
-      <button class="inicio-button" @click="volver">Inicio</button>
-    </div>
-  </nav> -->
   <div class="container1">
     <header>
       <button class="inicio-button" @click="volver">Volver</button>

@@ -30,9 +30,11 @@
   cursor: pointer;
   font-weight: 700;
 }
-.usuario{
+
+.usuario {
   margin-top: 0.1rem;
 }
+
 .platos {
   color: black;
   font-size: 30px;
@@ -46,7 +48,7 @@
   background-image: linear-gradient(to left, rgb(131, 137, 146) 0%, rgb(201, 203, 207) 100%);
   box-shadow: 1px 5px 15px 0px black;
   width: min(80rem, 50%);
-  margin:  auto;
+  margin: auto;
   padding: 1rem;
   margin-top: 0.1rem;
   border-radius: 1rem;
