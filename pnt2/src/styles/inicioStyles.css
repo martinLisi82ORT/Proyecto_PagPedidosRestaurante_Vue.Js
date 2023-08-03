@@ -1,48 +1,65 @@
 .container {
-    background-image: url("~@/assets/restovue.webp");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-  }
-  
-  header {
-    padding: 20px;
-    text-align: right;
-  }
-  
-  .menu-button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .ingresar-button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    justify-content: flex-start
-  }
-  
-  main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 100px);
-  }
-  
-  h1 {
-    color: white;
-    font-size: 48px;
-    text-align: center;
-  }
-  
-  footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
+  background-image: url("~@/assets/restovue.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  text-align: right;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ingresar-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  justify-content: flex-start
+}
+
+.ingresar-button:hover {
+  color: black;
+}
+
+.menu-button:hover {
+  color: black;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.titulo {
+  color: red;
+  font-size: 62px;
+  font-family: cursive;
+  text-align: center;
+}

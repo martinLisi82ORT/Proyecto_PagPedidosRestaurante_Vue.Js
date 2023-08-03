@@ -27,18 +27,18 @@
       <div v-if="mostrarModal" class="modal" @click.self="mostrarModal = false">
         <div class="modal-content">
           <span class="modal-close" @click="mostrarModal = false">&times;</span>
-          <h2>Carrito</h2>
+          <h2 class="carrito">Carrito</h2>
           <div v-if="carrito.length === 0">
-            <p>No hay elementos en el carrito.</p>
+            <p class="vacio">No hay elementos en el carrito.</p>
           </div>
           <div v-else>
             <div v-for="item in carrito" :key="item.id">
               <p>{{ item.nombre }}</p>
-              <p>Precio: {{ item.precio }}</p>
+              <p>Precio: $ {{ item.precio }}</p>
             </div>
-            <p>Total: {{ calcularTotal() }}</p>
-            <button @click="realizarPedido()">Realizar pedido</button>
-            <button @click="cancelarPedido(); mostrarModal = false">Cancelar Pedido</button>
+            <p>Total: $ {{ calcularTotal() }}</p>
+            <button class="realizar-pedido" @click="realizarPedido()">Realizar pedido</button>
+            <button class="cancelar-pedido" @click="cancelarPedido(); mostrarModal = false">Cancelar Pedido</button>
           </div>
         </div>
       </div>

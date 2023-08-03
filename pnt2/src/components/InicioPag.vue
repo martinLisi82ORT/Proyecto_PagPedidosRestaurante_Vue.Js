@@ -10,7 +10,7 @@
     </header>
 
     <main>
-      <h1>RESTO VUE PEDIDOS</h1>
+      <h1 class="titulo">RESTO VUE PEDIDOS</h1>
     </main>
 
     <footer>

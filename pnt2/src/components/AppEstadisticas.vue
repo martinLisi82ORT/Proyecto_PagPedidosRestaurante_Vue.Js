@@ -1,6 +1,9 @@
 <template>
   <div v-if="useAuthStore().mostrarEstadisticas()">
     <div class="fondo">
+      <header class="header">
+        <button class="inicio-button" @click="volver">Volver</button>
+      </header>
       <div class="estadisticas">
         <h1>Estadísticas de Platos</h1>
         <div class="seccion">
@@ -38,10 +41,13 @@
 </template>
 
 <script setup>
+
+import { useRouter } from "vue-router";
 import useAuthStore from '../stores/AuthStore';
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
+const router = useRouter();
 const usuarios = ref([]);
 const totalPlatos = ref(0);
 const platosFavoritos = ref('');
@@ -54,6 +60,10 @@ onMounted(async () => {
   await cargarUsuarios();
   cargarEstadisticasPlatos();
 });
+
+const volver = () => {
+  router.push("/");
+};
 
 const cargarUsuarios = async () => {
   try {
@@ -206,6 +216,7 @@ const calcularPromedioPrecios = () => {
   margin: 0 auto;
   max-width: 500px;
 }
+
 .fondo {
   background-image: url('../assets/alfajor.webp');
   background-size: cover;
@@ -231,5 +242,24 @@ p {
 
 .seccion {
   margin-bottom: 20px;
+}
+
+.header {
+  padding: 15px;
+  text-align: right;
+}
+
+.inicio-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: right;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.inicio-button:hover {
+  color: white;
 }
 </style>

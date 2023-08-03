@@ -15,7 +15,6 @@
       <button class="button-inicio" @click="volver">Volver</button>
     </header>
 
-
     <div class="login-container">
       <h1 class="login-title">Iniciar sesión</h1>
       <div class="form-group">
@@ -121,12 +120,6 @@ export default {
   text-align: right;
 }
 
-/* .navbar-title-center {
-  margin: 0;
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
-} */
 .login-title {
   margin-bottom: 20px;
   font-size: 24px;
@@ -181,8 +174,14 @@ export default {
   background-color: transparent;
   border: none;
   color: black;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   font-weight: 700;
   text-align: right;
-}</style>
+}
+
+.button-inicio:hover{
+  color: white;
+}
+
+</style>
