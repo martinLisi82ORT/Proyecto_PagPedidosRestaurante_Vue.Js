@@ -39,15 +39,16 @@ header {
 
 main {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   height: calc(100vh - 100px);
 }
 
 h1 {
   color: white;
-  font-size: 48px;
+  font-size: 60px;
   text-align: center;
+  padding-top: 0;
 }
 
 footer {
@@ -62,4 +63,20 @@ footer {
   font-size: 62px;
   font-family: cursive;
   text-align: center;
+}
+
+.resto {
+  color: red;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.pedidos {
+  color: rgb(235, 209, 209);
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.nombre {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

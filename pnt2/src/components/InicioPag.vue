@@ -9,8 +9,9 @@
       <button class="ingresar-button" @click="irALogin">Ingresar</button>
     </header>
 
-    <main>
-      <h1 class="titulo">RESTO VUE PEDIDOS</h1>
+    <main class="nombre">
+      <!-- <h1 class="titulo">RESTO VUE PEDIDOS</h1> -->
+      <h1 class="resto">RestoVue<span class="pedidos">Pedidos</span></h1>
     </main>
 
     <footer>

@@ -1,10 +1,11 @@
 .background-imagen {
-  background-image: url('~@/assets/pizza.jpg');
+  background-image: url('~@/assets/menu_1.png');
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   min-height: 100vh;
   /* max-width: 200px;
   margin-right: 20px; */
+ background-repeat: no-repeat;
 }
 
 .menu-item-box {
@@ -108,7 +109,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #f2f2f2;
+  background-color: beige;
   padding: 10px;
   cursor: pointer;
 }

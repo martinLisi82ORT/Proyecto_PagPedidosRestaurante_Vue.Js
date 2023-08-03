@@ -133,8 +133,9 @@ export default {
 
 .register-title {
   margin-bottom: 20px;
-  font-size: 24px;
-  color: white;
+  font-size: 28px;
+  color: black;
+  font-weight: 900;
 }
 
 h1 {
@@ -196,5 +197,9 @@ button {
 .button-inicio {
   background-color: transparent;
   text-align: right;
+}
+
+.button-inicio:hover {
+  color: yellow;
 }
 </style>
