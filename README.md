@@ -42,10 +42,10 @@ Componente: AppHistorial.vue
 
 
 ### Ejemplo componente inicio
-![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/9cffddb8-fb53-4099-a467-e1d7bd9fd243)
+![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ef5e601a-a96f-4e3b-bd60-6b1cfb5bc0d5)
 
 ### Ejemplo Menú y Pedidos
-![image](https://github.com/SimonF4/PNT2-20231C-GRUPO5-ProyectoFinal/assets/111466956/a0e4179c-bdfc-4282-b091-3c5bf9ed3152)
+![Menu](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ebc3bc81-9815-4e66-b383-2983509c0375)
 
 ### Ejemplo Login
-![Login](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/b286c9c5-63fc-4080-8b12-566da6d9893f)
+![Login](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/4d7f57e3-adb2-4d89-a4f9-a6a26b550d59)
