@@ -83,7 +83,7 @@ export default {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   position: absolute;

@@ -67,14 +67,16 @@ footer {
 
 .resto {
   color: red;
-  font-weight: 500;
-  font-size: 5rem;
+  /* font-weight: 500; */
+  font-size: 7rem;
+ 
 }
 
 .pedidos {
-  color: rgb(235, 209, 209);
-  font-weight: 600;
-  font-size: 6rem;
+  color: yellow;
+  font-weight: 700;
+  /* font-size: 6rem; */
+  font-style: oblique;
 }
 
 .nombre {

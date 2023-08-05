@@ -54,7 +54,7 @@
           </div>
 
           <div class="total-price">
-            <p>Precio Total: {{ calcularTotal(datosDePago) }}</p>
+            <p>Precio Total: $ {{ calcularTotal(datosDePago) }}</p>
           </div>
 
           <div class="form-group">
@@ -73,7 +73,7 @@
         <div v-if="platosSeleccionado.length > 0">
           <div v-for="item in platosSeleccionado" :key="item.nombre">
             <p>Nombre: {{ item.nombre }}</p>
-            <p>Precio: {{ item.precio }}</p>
+            <p>Precio: $ {{ item.precio }}</p>
           </div>
         </div>
         <div v-else>
