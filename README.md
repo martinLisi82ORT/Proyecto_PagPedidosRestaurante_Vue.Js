@@ -42,11 +42,15 @@ Componente: AppHistorial.vue
   - Mostrar-> plato: con precio y FECHA del pedido.
 
 
-### Ejemplo componente inicio
+### Ejemplo componente inicio:
 ![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/382b884f-98d5-469f-84d6-8194c9b0730b)
 
-### Ejemplo Menú y Pedidos
+### Ejemplo Menú y Pedidos:
 ![Menu](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ebc3bc81-9815-4e66-b383-2983509c0375)
 
-### Ejemplo Login
+### Ejemplo Login:
 ![Login](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/4d7f57e3-adb2-4d89-a4f9-a6a26b550d59)
+
+### Ejemplo componente Pago:
+![Pago](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/0e2030bc-c061-4a63-b081-cdc230c2c515)
+
