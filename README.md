@@ -4,7 +4,8 @@ Idea elegida: Gestión de Deliverys de Restaurante.
                Nombre de la app = Resto Vue Pedidos.
               
 # Lista de los requerimientos técnicos
-Ej: Si mi idea es sobre películas un requerimiento será “Armar componente para visualizar película”. Otro será “Obtener las películas”
+App para realizar pedidos de comida, con login de usuario. 
+Se podra recorrer el menu de platos e ir cargando los pedidos a un "carrito de compras". Finalizada la seleccion, se podra ir a la seccion de pagos.
 
 Login :
   - creación de usuario
@@ -27,7 +28,7 @@ Carrito y Pago :
   - Calcular total de la orden
   - Confirmación: Simular una transacción una vez que el usuario confirme
   - Enviar una confirmación del pedido al usuario después del pago
-  - Cancelar: Si el usuario se arrepiente debería presionar en cancelar que lo llevaría de nuevo al menú (donde se ven los platos, no confundir con el menu principal de la aplicación).
+  - Cancelar: Si el usuario se arrepiente debería presionar en "Cancelar" que lo llevará de nuevo al menú de platos.
 
 Informes :<br />
 Log de acciones : estadísticas del restaurante , ingresos , platos más vendidos. Componente AppEstadisticas.vue
