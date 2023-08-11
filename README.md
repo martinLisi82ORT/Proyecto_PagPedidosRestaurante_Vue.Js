@@ -43,7 +43,7 @@ Componente: AppHistorial.vue
 
 
 ### Ejemplo componente inicio
-![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ef5e601a-a96f-4e3b-bd60-6b1cfb5bc0d5)
+![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/382b884f-98d5-469f-84d6-8194c9b0730b)
 
 ### Ejemplo Menú y Pedidos
 ![Menu](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ebc3bc81-9815-4e66-b383-2983509c0375)
