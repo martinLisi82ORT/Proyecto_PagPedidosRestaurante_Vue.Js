@@ -6,6 +6,8 @@
   /* max-width: 200px;
   margin-right: 20px; */
  background-repeat: no-repeat;
+ width: auto;
+ display: block;
 }
 
 .menu-item-box {

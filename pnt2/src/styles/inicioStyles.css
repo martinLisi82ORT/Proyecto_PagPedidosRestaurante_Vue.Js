@@ -13,8 +13,8 @@ header {
 .menu-button {
   background-color: transparent;
   border: none;
-  color: white;
-  font-size: 16px;
+  color: black;
+  font-size: 18px;
   cursor: pointer;
   font-weight: 700;
 }
@@ -22,19 +22,19 @@ header {
 .ingresar-button {
   background-color: transparent;
   border: none;
-  color: white;
-  font-size: 16px;
+  color: black;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   justify-content: flex-start
 }
 
 .ingresar-button:hover {
-  color: black;
+  color: red;
 }
 
 .menu-button:hover {
-  color: black;
+  color: red;
 }
 
 main {
@@ -66,18 +66,20 @@ footer {
 }
 
 .resto {
-  color: red;
+  color: black;
   /* font-weight: 500; */
   font-size: 7rem;
- 
+ border-style: ridge;
+ border-color: red;
 }
 
 .pedidos {
-  color: yellow;
+  color: black;
   font-weight: 700;
   /* font-size: 6rem; */
   font-style: oblique;
-}
+  background-color: red;
+  }
 
 .nombre {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
