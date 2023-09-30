@@ -42,7 +42,8 @@ Componente: AppHistorial.vue
   - Mostrar-> plato: con precio y FECHA del pedido.
 
 
-# Ejemplo de usuarios:
+## Ejemplo de usuarios:
+
 Usuario 1: Mail: user1@user1 - Contraseña: contra1
 
 Usuario 2: Mail: user2@user2 - Contraseña: contra2
