@@ -46,27 +46,27 @@ Componente: AppHistorial.vue
 
 Usuario 1
 Mail: user1@user1
-Contraseña:contra1
+Contraseña: contra1
 
 Usuario 2
 Mail: user2@user2
-Contraseña:contra2
+Contraseña: contra2
 
 Usuario 3
 Mail: user3@user3
-Contraseña:contra3
+Contraseña: contra3
 
 Usuario 4
 Mail: user4@user4
-Contraseña:contra4
+Contraseña: contra4
 
 Usuario 5
 Mail: user5@user5
-Contraseña:contra5
+Contraseña: contra5
 
 Usuario Administrador
 Mail: admin@admin
-Contraseña:contraadmin
+Contraseña: contraadmin
 
 
 ### Ejemplo componente inicio:
