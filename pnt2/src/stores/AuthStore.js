@@ -16,7 +16,8 @@ export default defineStore('auth', () => {
 
   async function login(mailIngresado, passwordIngresada) {
     try {
-      const response = await axios.get('https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users');
+      const response = await axios.get('https://650dfa08a8b42265ec2ce076.mockapi.io/users');
+      // const response = await axios.get('https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users');
       const usuariosDesdeElServicio = response.data;
   
       const usuarioEncontrado = usuariosDesdeElServicio.find(usuario => {
@@ -50,7 +51,8 @@ export default defineStore('auth', () => {
   }
 
   async function registrarse(usuario, contrasenia, email, edadUsuario, apellidoUsuario) {
-    const url = 'https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users';
+    const url = 'https://650dfa08a8b42265ec2ce076.mockapi.io/users';
+    // const url = 'https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users';
 
     try {
       // Obtener la lista de usuarios existentes
@@ -116,7 +118,8 @@ export default defineStore('auth', () => {
     listaPlatos.value = carrito;
 
     //Almacena en la API:
-    const url = 'https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users';
+    const url = 'https://650dfa08a8b42265ec2ce076.mockapi.io/users';
+    // const url = 'https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users';
     
     try {
       //Creo la url para el usuario actual:
@@ -152,7 +155,8 @@ export default defineStore('auth', () => {
   }
 
   async function guardarHistorialListaPlatos(){
-    const url = 'https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users';
+    const url = 'https://650dfa08a8b42265ec2ce076.mockapi.io/users';
+    // const url = 'https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users';
     const urlUsuario = url + '/' + String(this.id)
 
     //Llamo a la API
@@ -165,7 +169,7 @@ export default defineStore('auth', () => {
   function mostrarEstadisticas() {
     const usuarioAutenticado = hayUsuarioAutenticado;
     const usuarioMail = mail.value;
-    return usuarioAutenticado && (usuarioMail === "asd@asd.com");
+    return usuarioAutenticado && (usuarioMail === "admin@admin");
   }
     
 

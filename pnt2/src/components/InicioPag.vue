@@ -11,7 +11,29 @@
 
     <main class="nombre">
       <!-- <h1 class="titulo">RESTO VUE PEDIDOS</h1> -->
-      <h1 class="resto">RestoVue<span class="pedidos">Pedidos</span></h1>
+      <!-- <h1 class="resto">RestoVue<span class="pedidos">Pedidos</span></h1> -->
+
+      <ul class="restovue">
+        <li>R</li>
+        <li>E</li>
+        <li>S</li>
+        <li>T</li>
+        <li>O</li>
+        <li>V</li>
+        <li>U</li>
+        <li>E</li>
+      </ul>
+
+      <ul class="pedidos">
+        <li>P</li>
+        <li>E</li>
+        <li>D</li>
+        <li>I</li>
+        <li>D</li>
+        <li>O</li>
+        <li>S</li>
+      </ul>
+
     </main>
 
     <footer>
@@ -42,23 +64,24 @@ export default {
       this.$router.push('/login');
     },
     irAEstadisticas() {
-  if (AuthStore().getUsuario().mail === "asd@asd.com") {
-    this.$router.push('/estadisticas');
-  }
-},
+      // if (AuthStore().getUsuario().mail === "asd@asd.com") {
+      if (AuthStore().getUsuario().mail === "admin@admin") {
+        this.$router.push('/estadisticas');
+      }
+    },
     irAHistorial() {
       this.$router.push('/historial');
     },
     mostrarHistorial() {
       const usuario = AuthStore().hayUsuarioAutenticado;
-      const administrador =  AuthStore().getUsuario().mail;
-      return usuario && administrador != "asd@asd.com";
+      const administrador = AuthStore().getUsuario().mail;
+      return usuario && administrador != "admin@admin";
     },
     mostrarEstadisticas() {
-  const usuarioAutenticado = AuthStore().hayUsuarioAutenticado;
-  const usuarioMail = AuthStore().getUsuario().mail;
-  return usuarioAutenticado && usuarioMail === "asd@asd.com";
-}
+      const usuarioAutenticado = AuthStore().hayUsuarioAutenticado;
+      const usuarioMail = AuthStore().getUsuario().mail;
+      return usuarioAutenticado && usuarioMail === "admin@admin";
+    }
   }
 }
 </script>

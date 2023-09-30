@@ -67,7 +67,8 @@ const volver = () => {
 
 const cargarUsuarios = async () => {
   try {
-    const response = await axios.get('https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users');
+    const response = await axios.get('https://650dfa08a8b42265ec2ce076.mockapi.io/users');
+    // const response = await axios.get('https://649141342f2c7ee6c2c7e399.mockapi.io/usuarios/users');
     usuarios.value = response.data;
   } catch (error) {
     console.error(error);

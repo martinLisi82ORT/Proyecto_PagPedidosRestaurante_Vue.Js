@@ -15,11 +15,11 @@
 
         <p class="gastoTotal" v-if="store.getUsuario">Gasto Total $ {{ calcularGastoTotal() }}</p>
         <h3>Estadísticas de Platos Más Pedidos:</h3>
-        <ul>
+        
           <li v-for="plato in obtenerPlatosMasPedidos()" :key="plato.nombre">
             {{ plato.nombre }} (Pedidos: {{ plato.cantidad }})
           </li>
-        </ul>
+      
 
         <div class="contenedor-campos"></div>
       </div>
