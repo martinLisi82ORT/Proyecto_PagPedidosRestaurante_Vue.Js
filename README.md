@@ -4,7 +4,8 @@ Idea elegida: Gestión de Deliverys de Restaurante.
                Nombre de la app = Resto Vue Pedidos.
               
 # Lista de los requerimientos técnicos
-Ej: Si mi idea es sobre películas un requerimiento será “Armar componente para visualizar película”. Otro será “Obtener las películas”
+App para realizar pedidos de comida, con login de usuario. 
+Se podra recorrer el menu de platos e ir cargando los pedidos a un "carrito de compras". Finalizada la seleccion, se podra ir a la seccion de pagos.
 
 Login :
   - creación de usuario
@@ -27,7 +28,7 @@ Carrito y Pago :
   - Calcular total de la orden
   - Confirmación: Simular una transacción una vez que el usuario confirme
   - Enviar una confirmación del pedido al usuario después del pago
-  - Cancelar: Si el usuario se arrepiente debería presionar en cancelar que lo llevaría de nuevo al menú (donde se ven los platos, no confundir con el menu principal de la aplicación).
+  - Cancelar: Si el usuario se arrepiente debería presionar en "Cancelar" que lo llevará de nuevo al menú de platos.
 
 Informes :<br />
 Log de acciones : estadísticas del restaurante , ingresos , platos más vendidos. Componente AppEstadisticas.vue
@@ -41,11 +42,15 @@ Componente: AppHistorial.vue
   - Mostrar-> plato: con precio y FECHA del pedido.
 
 
-### Ejemplo componente inicio
-![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ef5e601a-a96f-4e3b-bd60-6b1cfb5bc0d5)
+### Ejemplo componente inicio:
+![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/382b884f-98d5-469f-84d6-8194c9b0730b)
 
-### Ejemplo Menú y Pedidos
+### Ejemplo Menú y Pedidos:
 ![Menu](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ebc3bc81-9815-4e66-b383-2983509c0375)
 
-### Ejemplo Login
+### Ejemplo Login:
 ![Login](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/4d7f57e3-adb2-4d89-a4f9-a6a26b550d59)
+
+### Ejemplo componente Pago:
+![Pago](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/0e2030bc-c061-4a63-b081-cdc230c2c515)
+
