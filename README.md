@@ -43,29 +43,34 @@ Componente: AppHistorial.vue
 
 
 ## Ejemplo de usuarios:
+
 Usuario 1
 Mail: user1@user1
 Contraseña:contra1
+
 Usuario 2
 Mail: user2@user2
 Contraseña:contra2
+
 Usuario 3
 Mail: user3@user3
 Contraseña:contra3
+
 Usuario 4
 Mail: user4@user4
 Contraseña:contra4
+
 Usuario 5
 Mail: user5@user5
 Contraseña:contra5
+
 Usuario Administrador
 Mail: admin@admin
 Contraseña:contraadmin
 
 
-
 ### Ejemplo componente inicio:
-![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/382b884f-98d5-469f-84d6-8194c9b0730b)
+![Inicio](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/8d9a6a47-f235-4a0f-8584-78c097537dff)
 
 ### Ejemplo Menú y Pedidos:
 ![Menu](https://github.com/martinLisi82ORT/Proyecto_PagPedidosRestaurante/assets/111402719/ebc3bc81-9815-4e66-b383-2983509c0375)
