@@ -44,7 +44,9 @@ Componente: AppHistorial.vue
 
 # Ejemplo de usuarios:
 Usuario 1
+
 Mail: user1@user1
+
 Contraseña: contra1
 
 Usuario 2
