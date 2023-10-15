@@ -8,12 +8,12 @@
     <div class="registro-container">
       <h1 class="register-title">Registrarse</h1>
       <input type="text" v-model="email" placeholder="Email">
-      <input type="text" v-model="usuario" placeholder="Usuario">
+      <input type="text" v-model="usuario" placeholder="Usuario" maxlength="20">
       <input type="password" v-model="contrasenia" placeholder="Contraseña">
-      <input type="text" v-model="edad" placeholder="Edad">
-      <input type="text" v-model="apellido" placeholder="Apellido">
+      <input type="text" v-model="edad" placeholder="Edad" maxlength="2">
+      <input type="text" v-model="apellido" placeholder="Apellido" maxlength="20">
       <button @click="registrarse">Registrarse</button>
-      <p v-if="errorMessage">{{ errorMessage }}</p>
+      <p class="error" v-if="errorMessage">{{ errorMessage }}</p>
       <div v-if="showAlert" class="alert">
         <span class="close" @click="showAlert = false">&times;</span>
         {{ alertMessage }}
@@ -202,4 +202,9 @@ button {
 .button-inicio:hover {
   color: yellow;
 }
+
+.error {
+  color: red;
+}
+
 </style>
