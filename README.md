@@ -1,45 +1,40 @@
-# PNT2-20231C-GRUPO5-ProyectoFinal
-Idea elegida: Gestión de Deliverys de Restaurante.
+# Apliocacion web - Vue.Js
 
-               Nombre de la app = Resto Vue Pedidos.
-              
-# Lista de los requerimientos técnicos
-App para realizar pedidos de comida, con login de usuario. 
-Se podra recorrer el menu de platos e ir cargando los pedidos a un "carrito de compras". Finalizada la seleccion, se podra ir a la seccion de pagos.
+Aplicación realizada con Vue.Js que permite la creación y login de Usuario, con recorrido de Menú de Comidas, Carga de pedidos a un Carrito de Compras, Confirmación de la compra con simulación de pago e Historial de pedidos para cada Usuario. 
 
-Login :
-  - creación de usuario
-  - logear a usuario ya creado
-  - Usuarios no logueados pueden acceder solo a: Menú (pero se requiere estar logueado para realizar un pedido), index y login.
-  - Roles: El usuario admin/gerente (creado por nosotros por lo que sabemos su mail y contraseña) es el unico usuario que puede acceder a la pagina de informes/estadísticas.
-
-Componente de inicio : 
-  - Componente inicio que muestre información general: nombre del restaurante, dirección y número de teléfono.
+### Lista de los requerimientos técnicos
+**Componente de inicio:** 
+  - Componente inicio que muestra información general: nombre del restaurante, dirección y número de teléfono.
   - Permitir a los usuarios ver, en la barra de navegación, las páginas a las que puede acceder según su rol(definido en la sección login).
 
-Menú y Pedidos : 
+**Con login de usuario:** Se podrá recorrer el menú de platos e ir cargando los pedidos a un "carrito de compras". Finalizada la selección, se podrá ir a la sección de pagos.
+
+**Login:**
+  - Creación de usuario
+  - Logear a usuario ya creado
+  - Usuarios no logueados pueden acceder solo a: Menú (pero se requiere estar logueado para realizar un pedido), index y login.
+  - Roles: El usuario admin/gerente (creado por nosotros por lo que sabemos su mail y contraseña) es el único usuario que puede acceder a la página de informes/estadísticas.
+
+**Menú y Pedidos:** 
   - Menú completo del restaurante, platos disponibles con sus descripciones y precios
   - Permitir agregar platos al carrito de compras
-  - Carrito: Muestra todo lo que se agrego al carrito y permitirá tanto confirmar la compra (confirmación del pedido) como cancelar el pedido, que limpiara todo el carrito.
+  - Carrito: Muestra todo lo que se agregó al carrito y permitirá tanto confirmar la compra (confirmación del pedido) como cancelar el pedido, que limpiara todo el carrito.
   - Confirmación del pedido: Una vez confirmado el pedido se redireccionará al usuario a la pantalla de pago.
 
-Carrito y Pago : 
-  - Componente de pagos de los clientes 
-  - Calcular total de la orden
-  - Confirmación: Simular una transacción una vez que el usuario confirme
-  - Enviar una confirmación del pedido al usuario después del pago
+**Carrito y Pago:** 
+  - Componente de pagos de los clientes.
+  - Calcular el total de la orden.
+  - Confirmación: Simula una transacción una vez que el usuario confirme.
+  - Enviar una confirmación del pedido al usuario después del pago.
   - Cancelar: Si el usuario se arrepiente debería presionar en "Cancelar" que lo llevará de nuevo al menú de platos.
 
-Informes :<br />
-Log de acciones : estadísticas del restaurante , ingresos , platos más vendidos. Componente AppEstadisticas.vue
-  - Permisos = solo el Usuario Admin
-  - Calendario/tabla de platos mas pedidos por dia de la semana: Habria q ver como se haria esta funcionalidad.
-      - OPCION -> agregar atributo FECHA a los Platos del Historial.Herramienta que puede servir: https://date-fns.org/
+**Informes:**
+Log de acciones: estadísticas del restaurante , ingresos , platos más vendidos.
+  - Permisos solo para el Usuario Admin.
 
-Historial :<br />
-Componente: AppHistorial.vue
-  - para mostrar un historial de los pedidos que hizo.
-  - Mostrar-> plato: con precio y FECHA del pedido.
+**Historial:**
+  - Permisos solo para el Usuario logueado.
+  - Muestra historial de pedidos realizado.
 
 
 ---
