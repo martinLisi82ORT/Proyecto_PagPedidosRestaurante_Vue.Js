@@ -1,4 +1,4 @@
-# Apliocacion web - Vue.Js
+# Aplicacion web - Vue.Js
 
 Aplicación realizada con Vue.Js que permite la creación y login de Usuario, con recorrido de Menú de Comidas, Carga de pedidos a un Carrito de Compras, Confirmación de la compra con simulación de pago e Historial de pedidos para cada Usuario. 
 
