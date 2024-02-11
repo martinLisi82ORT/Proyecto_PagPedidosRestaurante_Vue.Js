@@ -38,6 +38,8 @@ Log de acciones: estadísticas del restaurante , ingresos , platos más vendidos
 
 
 ---
+### Herramientas utilizadas:
+JavaScript | VUE.Js | Node.Js | VSCode 
 
 <div align="center">
 <img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" />
